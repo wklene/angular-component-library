@@ -2,7 +2,7 @@
 <acl-gallery [images]="images$|async" [permissions]="permissions" (fullImage)="fullImageEvent($event)" (add)="addImageEvent($event)" (delete)="deleteImageEvent($event)"></acl-gallery>
 
 <h5>Single Image</h5>
-<acl-picture [image]="image" [permissions]="permissions" (delete)="deleteEvent($event)"></acl-picture>
+<acl-picture [image]="image" [permissions]="permissions" (delete)="deleteImageEvent($event)"></acl-picture>
 
 <h5>Permissions</h5>
 <label>read access</label>
