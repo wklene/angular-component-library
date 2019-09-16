@@ -22,9 +22,11 @@ export class PictureComponent {
 
     constructor() { }
 
-    public deleteImage = (event: any): void => {
-        event.stopPropagation(); // prevent click event from also triggering the getFullImage function
-        this.delete.emit( this.image.id );
+    public deleteImage = (event?: any): void => {
+        if (event) {
+            event.stopPropagation(); // prevent click event from also triggering the getFullImage function
+        }
+        this.delete.emit(this.image.id);
     }
 
     public addImage = (image: Acl.Image): void => {
@@ -35,7 +37,7 @@ export class PictureComponent {
 
     public getFullImage = (): void => {
         this.showPopup = true;
-        this.fullImage.emit( this.image.id );
+        this.fullImage.emit(this.image.id);
     }
 
 }
