@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="6338beaf2325986c198e56cdc980cd1c8da62d76" datatype="html">
-        <source>Pagina</source>
+      <trans-unit id="8380d9eff8613c0bc58edc7cebc2aa72e17b11e3" datatype="html">
+        <source>Page</source>
         <target>Pagina</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
@@ -11,8 +11,8 @@
         </context-group>
         <note priority="1" from="description">@pagination.label.page</note>
       </trans-unit>
-      <trans-unit id="942b48075bb6513088c40aedc3507063a5d52031" datatype="html">
-        <source>van de</source>
+      <trans-unit id="169eed2bc3e08e1bea977bcc5d799379f6b8a758" datatype="html">
+        <source>of</source>
         <target>van de</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
@@ -20,8 +20,17 @@
         </context-group>
         <note priority="1" from="description">@pagination.label.of</note>
       </trans-unit>
-      <trans-unit id="077da7bdef30156da7d9009b2f13a53d7bc7f6bd" datatype="html">
-        <source>Bestand is te groot.</source>
+      <trans-unit id="aaff80995a8253b7c81368ac8960c88a46d22b6a" datatype="html">
+        <source>Value is missing or invalid.</source>
+        <target>U heeft dit veld niet correct ingevuld.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/popup/popup.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">@popup.validation.invalid</note>
+      </trans-unit>
+      <trans-unit id="6718c2085fd8636c9a5631074bc4885247ceefe7" datatype="html">
+        <source>File too big.</source>
         <target>Bestand is te groot.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
@@ -29,8 +38,8 @@
         </context-group>
         <note priority="1" from="description">@uploader.warning.filesize.title</note>
       </trans-unit>
-      <trans-unit id="0127ec9236e2dbadba62d6e0263b58f8eb5b361d" datatype="html">
-        <source>Uw bestand mag niet groter dan 10mb zijn.</source>
+      <trans-unit id="0f69aa28cc4ef356e9ea1fffcce70e7400e55d27" datatype="html">
+        <source>File size can not exceed 10Mb.</source>
         <target>Uw bestand mag niet groter dan 10mb zijn.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
@@ -38,8 +47,8 @@
         </context-group>
         <note priority="1" from="description">@uploader.warning.filesize.message</note>
       </trans-unit>
-      <trans-unit id="0b70beff8165e00687a203df60f613a352bb30e2" datatype="html">
-        <source>Klik en selecteer een bestand </source>
+      <trans-unit id="9130b38410b8bb1b5331584f3d24ed74bc8accc9" datatype="html">
+        <source>Click to select a file </source>
         <target>Klik en selecteer een bestand </target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
@@ -47,8 +56,8 @@
         </context-group>
         <note priority="1" from="description">@uploader.info.select.click</note>
       </trans-unit>
-      <trans-unit id="37f43c6c6c9ee125e3a7ea034914ae1260f31721" datatype="html">
-        <source>of sleep het hierheen.</source>
+      <trans-unit id="669ae8a121160c762d906cb0c1710a3360d19e00" datatype="html">
+        <source>or drag one here.</source>
         <target>of sleep het hierheen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
@@ -56,12 +65,12 @@
         </context-group>
         <note priority="1" from="description">@uploader.info.select.drag</note>
       </trans-unit>
-      <trans-unit id="c8361d00e138bb2a132f0bbbcc116ede9cc84dfe" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{progress}}"/> van de <x id="INTERPOLATION_1" equiv-text="{{properties.total}}"/> verwerkt</source>
+      <trans-unit id="58c6f2e9fedf72e09699bcde9aa695c3dcf23045" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{progress.value}}"/> of <x id="INTERPOLATION_1" equiv-text="{{properties.total}}"/> processed</source>
         <target><x id="INTERPOLATION" equiv-text="{{progress}}"/> van de <x id="INTERPOLATION_1" equiv-text="{{properties.total}}"/> verwerkt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">../component-library/src/lib/components/progress/progress.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">@progress.info</note>
       </trans-unit>
