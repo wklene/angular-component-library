@@ -2,16 +2,18 @@
 
 ## Install Notes
 
-Clone the the repository, inside there are two projects. The component library and a seperate Angular project as a library test application.run:  `npm install` to install dependancies.
+Clone the the repository, inside there are two projects. The component library and a seperate application to test the library called "lib-tester". Install all dependancies.
+
+`npm install`
 
 ### Library Tester Application
-This application can be served straight out of the box. `ng serve` and test out the library/
+This application can be served straight out of the box. `ng serve` and try the library.
 
 ### Library
 
-Typically it is best to start with one of many tutorials on how to create your Angular library. To use this library you have to setup a couple of things.
+If you are new to Angular libraries it is typically best to start with one of many tutorials on how to create your own Angular library. To use this library you have to setup a couple of things.
 
-more on this later
+more on this later.
 <!-- ## .npmrc
 add .npmrc file to your root to publish your library to NPM or a local repository (eg. Sonatype Nexus Repository);
 
