@@ -1,0 +1,10 @@
+node_modules
+e2e
+projects/lib-tester
+projects/component-library/src
+
+
+.git
+.gitignore
+.editorconfig
+.vscode

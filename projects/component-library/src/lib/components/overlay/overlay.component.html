@@ -1,0 +1,4 @@
+<div class="overlay" *ngIf="show" (click)="close()">
+    <span *ngIf="!modal" class="close fa fa-times-circle fa-2x" (click)="close()"></span>
+    <ng-content></ng-content>
+</div>

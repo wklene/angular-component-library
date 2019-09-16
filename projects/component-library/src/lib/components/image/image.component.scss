@@ -1,0 +1,10 @@
+img{
+    border: 2px solid white;
+
+    height: 220px;
+    display: block;
+
+    &:hover{
+        border: 2px solid rgb(243, 214, 160);
+    }
+}

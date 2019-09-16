@@ -1,0 +1,8 @@
+<ng-container *ngIf="source!=''">
+    <ng-container *ngIf="type==='url'">
+        <img src="{{source}}" />
+    </ng-container>
+    <ng-container *ngIf="type==='data'">
+        <img src="data:{{mimeType}};base64,{{source}}" />
+    </ng-container>
+</ng-container>

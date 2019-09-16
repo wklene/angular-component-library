@@ -1,0 +1,3 @@
+<div class="gallery" *ngIf="permissions.canRead">
+    <acl-picture *ngFor="let img of images;" [image]="img" [permissions]="permissions" (fullImage)="getFullImage($event)" (add)="addImage($event)" (delete)="deleteImage($event)"></acl-picture>
+</div>

@@ -1,0 +1,71 @@
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+
+    .sidebar{
+        height: 100%;
+        width: 70px;
+        background: $sidebarBG;
+        color: $sidebarFG;
+
+        button{
+            width: 70px;
+            height: 70px;
+            margin: 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+
+            &.active{
+                background: rgba(0,0,0,0.15);
+            }
+        }
+
+        .logo {
+            background: url(assets/logowhite.png);
+            height: 60px;
+            width: 70px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header {
+        background: $headerBG;
+        color: $headerFG;
+        height: 60px;
+        width: 100%;
+        padding: 0.5em;
+
+        justify-content: flex-end;
+
+        div{
+            height: 40px;
+            line-height: 40px;
+            margin: 0 0.5em;
+        }
+
+    }
+
+    .content{
+        background: $contentBG;
+        color: $contentFG;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+        h2{
+            margin-left: 1em;
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+<div class="picture" *ngIf="permissions.canRead">
+
+    <div class="unset" *ngIf="image.source==='' && permissions.canWrite">
+        <acl-uploader (upload)="addImage($event)"></acl-uploader>
+    </div>
+
+    <acl-image [source]="image.source" [type]="image.type" [mimeType]="image.mimetype" (click)="getFullImage()">
+    </acl-image>
+
+    <div class="toolbar">
+        <span class="caption"></span>
+        <div class="buttons">
+            <button class="compressed opaque" (click)="deleteImage($event)"
+                *ngIf="permissions.canWrite && image.source!=''">
+                <span class="fa fa-trash"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<acl-overlay [modal]="false" [(show)]="showPopup">
+    <acl-image class="popup" [source]="image.source" [type]="image.type" [mimeType]="image.mimetype"></acl-image>
+</acl-overlay>

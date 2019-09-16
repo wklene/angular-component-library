@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8380d9eff8613c0bc58edc7cebc2aa72e17b11e3" datatype="html">
+        <source>Page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">@pagination.label.page</note>
+      </trans-unit>
+      <trans-unit id="169eed2bc3e08e1bea977bcc5d799379f6b8a758" datatype="html">
+        <source>of</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">@pagination.label.of</note>
+      </trans-unit>
+      <trans-unit id="8186e883cbe266f8a68bda276f398d5cf61ff0d1" datatype="html">
+        <source>File is too big.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.warning.filesize.title</note>
+      </trans-unit>
+      <trans-unit id="f51e6c57e0a6238cd0fd3176912b0f8485a1ab72" datatype="html">
+        <source>The file size can not exceed 10Mb.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.warning.filesize.message</note>
+      </trans-unit>
+      <trans-unit id="9130b38410b8bb1b5331584f3d24ed74bc8accc9" datatype="html">
+        <source>Click to select a file </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.info.select.click</note>
+      </trans-unit>
+      <trans-unit id="3733e84e8511bcaae9044ce77b8a6d24d156d89e" datatype="html">
+        <source>or drag one in here.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.info.select.drag</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

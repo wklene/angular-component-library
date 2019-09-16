@@ -1,0 +1,18 @@
+<acl-overlay *ngIf="popup" [show]="popup" [modal]="popup.persistant">
+    <div class="popup" (click)="$event.stopPropagation()">
+        <h2>{{popup.title}}</h2>
+        <div class="message">{{popup.message}}</div>
+
+        <div *ngIf="dialogForm && popup.dialog" [formGroup]="dialogForm">
+            <ng-container *ngFor="let input of popup.dialog.inputs">
+                <label for="{{input.name}}">{{input.name}}</label>
+                <input id="{{input.name}}" type="{{input.type}}" placeholder="{{input.placeholder || ''}}" formControlName="{{input.name}}"/>
+                <div class="warning" *ngIf="dialogForm.controls[input.name].invalid && dialogForm.controls[input.name].touched" i18n="@popup.validation.invalid">Value is missing or invalid.</div>
+            </ng-container>
+        </div>
+
+        <div class="buttons">
+            <button *ngFor="let button of popup.buttons" [ngClass]="button.class" (click)="doAction(button, $event);">{{button.label}}</button>
+        </div>
+    </div>
+</acl-overlay>

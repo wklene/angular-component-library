@@ -1,0 +1,27 @@
+.picture{
+    cursor: pointer;
+    display: inline-block;
+
+    .unset{
+        background: #fff;
+        border: 1px solid #eee;
+        width: 220px;
+        height: 220px;
+    }
+
+    .toolbar{
+        background: none;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: -44px 5px 0;
+
+        .caption{
+            font-weight: bold;
+            font-size: 0.9em;
+            margin: 0 0 0 1em;
+        }
+
+    }
+}

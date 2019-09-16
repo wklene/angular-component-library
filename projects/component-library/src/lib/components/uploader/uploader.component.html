@@ -1,0 +1,20 @@
+<form [formGroup]="fileForm" class="file-uploader" [ngClass]="{ 'dragover' : dragover }" (drop)="dragover=false;true;" (dragover)="dragover=true" (dragleave)="dragover=false">
+    <label for="file">
+        <input class="inputfile" formControlName="file" id="file" type="file" name="document" accept="{{accept}}" capture="user" (change)="onFileChange($event)"/>
+        <ng-container *ngIf="fileForm.invalid && fileForm.dirty">
+            <i class="fa fa-exclamation-triangle"></i>
+            <div>
+                <b i18n="@uploader.warning.filesize.title">File too big.</b>
+                <br />
+                <ng-container i18n="@uploader.warning.filesize.message">File size can not exceed 10Mb.</ng-container></div>
+        </ng-container>
+        <ng-container *ngIf="!target && !fileForm.dirty">
+            <i class="fa fa-file-upload"></i>
+            <div><b i18n="@uploader.info.select.click">Click to select a file </b><ng-container i18n="@uploader.info.select.drag">or drag one here.</ng-container></div>
+        </ng-container>
+        <ng-container *ngIf="target && fileForm.valid">
+            <i class="far fa-file" [ngClass]="target.name"></i>
+            <div><b>{{target.name}}</b></div>
+        </ng-container>
+    </label>
+</form>

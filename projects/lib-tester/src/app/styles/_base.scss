@@ -1,0 +1,174 @@
+body {
+  font: 14px arial;
+  color: #444;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Rambla, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+p,
+span {
+  line-height: 1.5em;
+}
+
+input {
+  margin: 0 0.5em;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  width: 50px;
+}
+
+button {
+  border: none;
+  background: #f1f1f2;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #444;
+  margin: 0 5px;
+
+  cursor: pointer;
+
+  &:disabled {
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: darken(#f1f1f2, 5%);
+  }
+  &:active {
+    background: darken(#f1f1f2, 10%);
+  }
+
+  &.primary {
+    background: #3a7cc7;
+    color: #fff;
+
+    &:hover {
+      background: darken(#3a7cc7, 5%);
+    }
+    &:active {
+      background: darken(#3a7cc7, 10%);
+    }
+  }
+
+  &.secondary {
+    background: $buttonSecondary;
+    color: #fff;
+
+    &:hover {
+      background: darken($buttonSecondary, 5%);
+    }
+    &:active {
+      background: darken($buttonSecondary, 10%);
+    }
+  }
+
+  &.clear {
+    background: none;
+    color: #fff;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    &:active {
+      background: rgba(0, 0, 0, 0.01);
+    }
+  }
+
+  &.opaque {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    &:active {
+      background: rgba(0, 0, 0, 0.01);
+    }
+  }
+
+  &.link {
+    background: none;
+    color: #3a7cc7;
+
+    &:hover {
+      color: darken(#3a7cc7, 5%);
+    }
+    &:active {
+      color: darken(#3a7cc7, 10%);
+    }
+  }
+
+  &.negative {
+    background: #da4f4f;
+    color: #fff;
+
+    &:hover {
+      background: darken(#da4f4f, 5%);
+    }
+    &:active {
+      background: darken(#da4f4f, 10%);
+    }
+  }
+
+  &.positive {
+    background: #3ac775;
+    color: #fff;
+
+    &:hover {
+      background: darken(#3ac775, 5%);
+    }
+    &:active {
+      background: darken(#3ac775, 10%);
+    }
+  }
+
+  &.large {
+    padding: 1.5em;
+  }
+
+  &.compressed {
+    padding: 0.5em 1em;
+  }
+
+  &.small {
+    padding: 0.5em;
+  }
+
+  > span + span {
+    margin-left: 1em;
+  }
+}

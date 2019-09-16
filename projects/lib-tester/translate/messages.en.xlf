@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6338beaf2325986c198e56cdc980cd1c8da62d76" datatype="html">
+        <source>Pagina</source>
+        <target>Page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">@pagination.label.page</note>
+      </trans-unit>
+      <trans-unit id="942b48075bb6513088c40aedc3507063a5d52031" datatype="html">
+        <source>van de</source>
+        <target>of</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/pagination/pagination.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">@pagination.label.of</note>
+      </trans-unit>
+      <trans-unit id="077da7bdef30156da7d9009b2f13a53d7bc7f6bd" datatype="html">
+        <source>Bestand is te groot.</source>
+        <target>File is too big.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.warning.filesize.title</note>
+      </trans-unit>
+      <trans-unit id="0127ec9236e2dbadba62d6e0263b58f8eb5b361d" datatype="html">
+        <source>Uw bestand mag niet groter dan 10mb zijn.</source>
+        <target>File size can not exceed 10mb.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.warning.filesize.message</note>
+      </trans-unit>
+      <trans-unit id="0b70beff8165e00687a203df60f613a352bb30e2" datatype="html">
+        <source>Klik en selecteer een bestand </source>
+        <target>Click to select a file </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.info.select.click</note>
+      </trans-unit>
+      <trans-unit id="37f43c6c6c9ee125e3a7ea034914ae1260f31721" datatype="html">
+        <source>of sleep het hierheen.</source>
+        <target>or drag one here.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/uploader/uploader.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">@uploader.info.select.drag</note>
+      </trans-unit>
+      <trans-unit id="c8361d00e138bb2a132f0bbbcc116ede9cc84dfe" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{progress}}"/> van de <x id="INTERPOLATION_1" equiv-text="{{properties.total}}"/> verwerkt</source>
+        <target><x id="INTERPOLATION" equiv-text="{{progress}}"/> of <x id="INTERPOLATION_1" equiv-text="{{properties.total}}"/> processed</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../component-library/src/lib/components/progress/progress.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">@progress.info</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

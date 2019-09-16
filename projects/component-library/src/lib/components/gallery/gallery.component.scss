@@ -1,0 +1,11 @@
+.gallery{
+    background: #eee;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        margin: 0.5em;
+    }
+
+}

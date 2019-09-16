@@ -1,0 +1,48 @@
+.popup{
+    max-width: 800px;
+    max-height: 80%;
+    margin: auto;
+    border: 1em solid white;
+    background: #FFF;
+    padding: 0 1em;
+
+    .buttons {
+        margin: 2em 0 1em;
+        display: flex;
+        justify-content: space-between;
+
+        button:only-child{
+            margin: 0 0 0 auto;
+        }
+    }
+
+    .message {
+        white-space: pre-line;
+    }
+
+    .warning{
+        color: rgb(204, 102, 102);
+        margin: 0.5em;
+    }
+
+    input{
+        width: 100%;
+        margin: 0;
+
+        &.ng-touched.ng-invalid{
+            border: 1px solid rgb(204, 102, 102);
+        }
+        &.ng-touched.ng-valid{
+            border: 1px solid rgb(102, 204, 187);
+        }
+    }
+
+    label {
+        text-transform: uppercase;
+        margin: 2em 0 0.5em;
+        color: #888;
+        display: block;
+        font-size: 0.9em;
+    }
+
+}

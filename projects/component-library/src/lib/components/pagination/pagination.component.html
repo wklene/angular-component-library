@@ -1,0 +1,18 @@
+<div class="flexbox">
+    <div>
+        <span i18n="@pagination.label.page">Page</span>
+        <input type="number" min="0" max="{{properties.totalPages}}" [formControl]="pageField" [value]="properties.current + properties.visualOffset"/>
+        <span>
+            <ng-container i18n="@pagination.label.of">of</ng-container>
+            <ng-container> {{properties.totalPages}}</ng-container>
+        </span>
+    </div>
+    <div>
+        <button [disabled]="canPrevious(properties.current)===false" (click)="previous()">
+            <span class="fa fa-angle-left"></span>
+        </button>
+        <button [disabled]="canNext(properties.current)===false" (click)="next()">
+            <span class="fa fa-angle-right"></span>
+        </button>
+    </div>
+</div>

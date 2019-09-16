@@ -1,0 +1,4 @@
+<div class="acl-progress">
+    <progress max="{{properties.total}}" value="{{progress.value}}"></progress>
+    <div class="label" *ngIf="properties.showLabel" i18n="@progress.info">{{progress.value}} of {{properties.total}} processed</div>
+</div>
